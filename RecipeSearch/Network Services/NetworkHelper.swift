@@ -21,6 +21,7 @@ class NetworkHelper {
     session = URLSession(configuration: .default)
   }
   
+    //updated networkHelper to accept more information 
   func performDataTask(with request: URLRequest,
                        completion: @escaping (Result<Data, AppError>) -> ()) {
     // two states on dataTask, resume() and suspended by default
