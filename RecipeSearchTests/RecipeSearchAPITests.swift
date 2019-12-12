@@ -51,7 +51,7 @@ class RecipeSearchAPITests: XCTestCase {
                 XCTAssertEqual(recipes.count, expectedRecipesCount)
             }
         }
-        wait(for: [exp], timeout: 5.0)
+        wait(for: [exp], timeout: 5.0) //relies on network/ not a unit test
     }
 }
 
